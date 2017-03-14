@@ -1,3 +1,23 @@
 <h1>
   {{title}}
 </h1>
+<table>
+  <thead>
+  <th>secid</th>
+  <th>shortname</th>
+  <th>lotsize</th>
+  <th>prevprice</th>
+  <th>sectype</th>
+  <th>prevdate</th>
+  </thead>
+  <tbody>
+  <tr *ngFor="let item of data; let i=index">
+    <td>{{item.secid}}</td>
+    <td>{{item.shortname}}</td>
+    <td>{{item.lotsize}}</td>
+    <td>{{item.prevprice}}</td>
+    <td>{{item.sectype}}</td>
+    <td>{{item.prevdate}}</td>
+  </tr>
+  </tbody>
+</table>
